@@ -1,0 +1,236 @@
+/* Body 樣式 */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+  }
+  
+  
+/* 頁首樣式 */
+  #header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  /* 導航列樣式 */
+  #nav {
+	background-color: #444;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+  }
+
+  /* 導航列中的連結樣式 */
+  #nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+  }
+  
+  /* 導航列中選擇的連結樣式 */
+  #nav a.active {
+	font-weight: bold;
+  }
+  
+  /* 整體包裹容器樣式 */
+  #WRAPPER {
+	display: flex;
+  }
+  
+ 
+/* 側邊欄樣式 */
+ #aside {
+	flex: 0 0 200px;
+	background-color: #eee;
+	padding: 20px;
+  }
+  
+  /* 側邊欄標題樣式 */
+  #aside h1 {
+	color: #333;
+  }
+  
+  /* 側邊欄清單樣式 */
+  #aside ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px;
+  }
+  
+  /* 側邊欄清單項目樣式 */
+  #aside ul li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+  }
+  
+  /* 內容區域樣式 */
+  #content {
+	flex: 1;
+	padding: 20px;
+  }
+  
+  /* 主要區塊樣式 */
+  #main {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 20px;
+  }
+
+  /* 標題樣式 */
+  #title {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 10px;
+  }
+  
+  /* 頁尾樣式 */
+  #footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+  }
+
+  /* 側邊欄清單項目悬停效果 */
+  #aside ul li {
+	transition: transform 0.3s ease;
+  }
+  
+  #aside ul li:hover {
+	transform: scale(1.1);
+  }
+  .nav-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #444;
+	color: #fff;
+	border: 0;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	outline: none;
+	border-radius: 10px;
+	}
+
+/* 導航菜單按鈕悬停樣式 */
+.nav-btn:hover {
+	position: relative;
+	background-color: #B3B3B3;
+	border: none; 
+	btn:focus{outline:0;}
+}
+
+/* 導航菜單按鈕悬停時的方框 */
+.nav-btn:hover::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border-radius: 0;
+	z-index: -1;
+	btn:focus{outline:0;}
+}
+
+/* 導航菜單按鈕點擊效果 */
+.nav-btn.active {
+	transform: scale(0.9);
+	background-color: #6D6D6D;
+	color: #fff;
+}
+
+/* 清單樣式 */
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+
+/* 自訂按鈕樣式 */
+  .custom-btn {
+	position: relative;
+  }
+
+  /* 按鈕前置元素樣式 */
+  .custom-btn::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	bottom: -10px;
+	left: -10px;
+	border: 1px solid #0ff;
+	transform: translateZ(-10px);
+	animation: pulsate 2s linear infinite;
+	opacity: 0;
+	pointer-events: none;
+	border-radius: 10px;
+  }
+  
+  /* 按鈕悬停時的前置元素樣式 */
+  .custom-btn:hover::before {
+	opacity: 1;
+  }
+  
+  /* 前置元素的動畫效果 */
+  @keyframes pulsate {
+	0% {
+	  box-shadow: 0px 0px 5px #0ff;
+	}
+	50% {
+	  box-shadow: 0px 0px 20px #0ff;
+	}
+	100% {
+	  box-shadow: 0px 0px 5px #0ff;
+	}
+  }
+  
+  /* 自訂按鈕樣式 */
+  .custom-btn {
+	background-color: transparent;
+	border: none;
+	color: #333;
+	font-size: 20px;
+	padding: 8px 18px;
+	cursor: pointer;
+	width: 150px;
+	height: 40px;
+  }
+
+  .custom-link {
+	position: relative;
+	text-decoration: none;
+  }
+  
+  .custom-link::before,
+  .custom-link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #0ff;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 1s ease;
+  }
+  
+  .custom-link::before {
+	top: 0;
+  }
+  
+  .custom-link::after {
+	bottom: 0;
+  }
+  .custom-link:hover::after,
+  .custom-link:hover::before {
+	transform: scaleX(1);
+  }
+  

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>範例</title>
+	<style>
+		 /* 設定 body 元素的字型為 Verdana, Geneva, sans-serif，字體大小為 11 點 */
+		body {font-family:Verdana, Geneva, sans-serif; font-size:11pt;}
+ 		/* 設定 div 元素的浮動方式為向左浮動，左邊間距為 5 像素，邊框為黑色實線 1 像素 */
+		div {float:left; margin-left:5px; border:solid #000 1px;}
+		/* 設定 id 為 "box" 的元素的高度為 100 像素，寬度為 100 像素 */
+		#box {height:100px;width:100px;}
+		/* 設定具有 highlight 類別的元素的背景顏色為淺黃色 */
+		.highlight {background-color:#FF6;}
+	</style>
+	<script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script>
+	$(document).ready(function(){	
+		/* 顯示一個警示視窗顯示文字 "Change Color!" */
+		alert('Change Color!');
+		/* 切換具有 id 為 "box" 的元素的 highlight 類別，如果已有該類別則移除，如果沒有則新增 */
+		$('#box').toggleClass('highlight');
+		/* 顯示一個警示視窗顯示文字 "Change Color!" */
+		alert('Change Color!');
+		/* 切換具有 id 為 "box" 的元素的 highlight 類別，如果已有該類別則移除，如果沒有則新增 */
+		$('#box').toggleClass('highlight');
+	});
+	</script>
+</head>
+
+<body>
+<div id="box">Box</div>
+</body>
+</html>

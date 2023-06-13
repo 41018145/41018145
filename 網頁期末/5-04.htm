@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>範例</title>
+	<style>
+		table{
+		  width:300px;
+		  border:2px solid black;
+		}
+		/* 設定表格標題和儲存格的文字居中對齊，外邊距為10px，內邊距為2px，邊框為1px灰色實線 */
+		th, td {
+		  text-align: center;
+		  margin:10px; padding:2px;
+		  border:1px solid gray;
+		}
+		/* 設定第一欄的文字靠左對齊 */
+		td:nth-child(1){
+		  text-align:left;
+		}
+		/* 設定第二欄的文字靠右對齊 */
+		td:nth-child(2){
+		  text-align:right;
+		}
+		/* 設定奇數行的背景顏色為淺灰色 */
+		tr:nth-child(2n+1){
+		  background-color: #f1f1f1;
+		}
+		/* 設定第一行的文字顏色為白色，背景顏色為深藍色 */
+		tr:first-child{
+		  color: #FFFFFF;
+		  background-color: #00CED1;
+		}
+	</style>
+</head>
+<body>
+	<h2>花生餅乾</h2>
+	<table>
+	  <tr>
+	    <th>食材</th>
+	    <th>份量</th>
+	  </tr>
+	  <tr>
+	    <td>無鹽奶油</td>
+	    <td>120g</td>
+	  </tr>
+	  <tr>
+	    <td>白細砂糖</td>
+	    <td>100g</td>
+	  </tr>
+	  <tr>
+	    <td>全蛋1顆</td>
+	    <td>50g</td>
+	  </tr>
+	  <tr>
+	    <td>低筋麵粉</td>
+	    <td>250g</td>
+	  </tr>
+	  <tr>
+	    <td>花生醬</td>
+	    <td>50g</td>
+	  </tr>
+	  <tr>
+	    <td>泡打粉</td>
+	    <td>2g</td>
+	  </tr>
+	</table>
+</body>
+</html>
